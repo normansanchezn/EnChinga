@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct PageView: View {
-    var pageModel: PageModel
+    @Binding var pageModel: PageModel
     
     var body: some View {
         VStack {
-            CircularImage(image: pageModel.image)
-            TitleText(text: pageModel.title)
-            SubtitleText(text: pageModel.subtitle)
+            CircularImage(image: $pageModel.image)
+            TitleText(text: $pageModel.title)
+            SubtitleText(text: $pageModel.subtitle)
         }
     }
 }

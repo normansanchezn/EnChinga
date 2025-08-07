@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CircularImage: View {
-    var image: String
+    @Binding var image: String
+    
     var body: some View {
         Image(image)
             .resizable()

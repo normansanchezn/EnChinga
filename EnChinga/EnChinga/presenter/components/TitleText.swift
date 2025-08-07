@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TitleText: View {
-    let text: LocalizedStringKey
+    @Binding var text: LocalizedStringKey
     
     var body: some View {
         Text(text)

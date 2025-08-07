@@ -7,8 +7,8 @@
 import SwiftUI
 
 struct PageModel: Identifiable {
-    let id = UUID()
-    let image: String
-    let title: LocalizedStringKey
-    let subtitle: LocalizedStringKey
+    var id = UUID()
+    var image: String
+    var title: LocalizedStringKey
+    var subtitle: LocalizedStringKey
 }

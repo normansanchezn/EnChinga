@@ -7,7 +7,8 @@
 import SwiftUI
 
 struct SubtitleText: View {
-    let text: LocalizedStringKey
+    @Binding var text: LocalizedStringKey
+    
     var body: some View {
         Text(text)
             .font(.subheadline)

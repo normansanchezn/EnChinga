@@ -9,7 +9,13 @@ import SwiftUI
 
 struct WelcomeView: View {
 
-    let pages: [PageModel] = [
+    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "continue_text", onButtonClicked: {
+        print("I press continue")
+    })
+    @State var secondaryButtonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text", onButtonClicked: {
+        print("I press sign up")
+    })
+    @State var pages: [PageModel] = [
         PageModel(image: "welcome_image", title: "welcome_title_step_one", subtitle: "welcome_subtitle_step_one"),
         PageModel(image: "welcome_image", title: "welcome_title_step_two", subtitle: "welcome_subtitle_step_two")
     ]
@@ -18,14 +24,10 @@ struct WelcomeView: View {
     var body: some View {
         VStack{
             Spacer()
-            ViewPager(pageModel: pages)
+            ViewPager(pageModel: $pages)
             Spacer()
-            PrimaryButton(primaryButtonText: "continue_txt", onButtonClicked: {
-                print("I press continue")
-            })
-            SecondaryButton(secondaryButtonText: "sign_up_txt", onButtonClicked: {
-                print("I press sign up")
-            })
+            PrimaryButton(buttonModel: $buttonModel)
+            SecondaryButton(buttonModel: $secondaryButtonModel)
                 
         }.padding()
     }

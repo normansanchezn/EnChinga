@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct PrimaryButton: View {
-    let primaryButtonText: LocalizedStringKey
-    let onButtonClicked: () -> Void
+    @Binding var buttonModel: ButtonModel?
     
     var body: some View {
-        Button(action: onButtonClicked) {
-            Text(primaryButtonText)
+        Button {
+            buttonModel?.onButtonClicked()
+        } label: {
+            Text(buttonModel?.textButton ?? "dummy_text")
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 12)
                 .background(.orange)
