@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WelcomeView: View {
 
     let pages: [PageModel] = [
         PageModel(image: "welcome_image", title: "welcome_title_step_one", subtitle: "welcome_subtitle_step_one"),
@@ -20,22 +20,12 @@ struct ContentView: View {
             Spacer()
             ViewPager(pageModel: pages)
             Spacer()
-            Button(action: signIn) {
-                Text("Continue")
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(.orange)
-                    .cornerRadius(10)
-                    .foregroundColor(.white)
-            }.padding(.horizontal, 16)
-            Button(action: signIn) {
-                Text("Sign in")
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(.orange.opacity(0.1))
-                    .cornerRadius(10)
-                    .foregroundColor(.orange)
-            }.padding(.horizontal, 16)
+            PrimaryButton(primaryButtonText: "continue_txt", onButtonClicked: {
+                print("I press continue")
+            })
+            SecondaryButton(secondaryButtonText: "sign_up_txt", onButtonClicked: {
+                print("I press sign up")
+            })
                 
         }.padding()
     }
@@ -45,6 +35,5 @@ func signIn() {
     
 }
 
-#Preview {
-    ContentView()
-}
+
+#Preview { WelcomeView() }

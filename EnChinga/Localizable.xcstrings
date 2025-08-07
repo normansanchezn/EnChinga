@@ -1,7 +1,83 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-
+    "continue_txt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        }
+      }
+    },
+    "dummy_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lorem ipsum dolor sit amet"
+          }
+        }
+      }
+    },
+    "sign_up_txt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up"
+          }
+        }
+      }
+    },
+    "welcome_subtitle_step_one" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Order now! We have everything that you need!"
+          }
+        }
+      }
+    },
+    "welcome_subtitle_step_two" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Our delivery driver are ready!"
+          }
+        }
+      }
+    },
+    "welcome_title_step_one" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All your favorite foods"
+          }
+        }
+      }
+    },
+    "welcome_title_step_two" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get delivery at your doorstep!"
+          }
+        }
+      }
+    }
   },
   "version" : "1.0"
 }

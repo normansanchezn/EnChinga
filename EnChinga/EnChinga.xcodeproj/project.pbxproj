@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7804E44F2E4490BE00E87F93 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7804E44E2E4490BE00E87F93 /* Localizable.xcstrings */; };
+		7804E4512E44911100E87F93 /* ImagesLocalizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7804E4502E44911100E87F93 /* ImagesLocalizable.xcstrings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7804E4292E446B1400E87F93 /* EnChinga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnChinga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7804E44E2E4490BE00E87F93 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		7804E4502E44911100E87F93 /* ImagesLocalizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ImagesLocalizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		7804E4202E446B1400E87F93 = {
 			isa = PBXGroup;
 			children = (
+				7804E4502E44911100E87F93 /* ImagesLocalizable.xcstrings */,
+				7804E44E2E4490BE00E87F93 /* Localizable.xcstrings */,
 				7804E42B2E446B1400E87F93 /* EnChinga */,
 				7804E42A2E446B1400E87F93 /* Products */,
 			);
@@ -109,6 +118,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7804E4512E44911100E87F93 /* ImagesLocalizable.xcstrings in Resources */,
+				7804E44F2E4490BE00E87F93 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +195,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -240,6 +252,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
