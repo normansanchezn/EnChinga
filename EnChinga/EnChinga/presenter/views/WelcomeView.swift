@@ -9,9 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
 
-    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "continue_text", onButtonClicked: {
-        print("I press continue")
-    })
+    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "continue_text", onButtonClicked: {})
     @State var secondaryButtonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text", onButtonClicked: {
         print("I press sign up")
     })

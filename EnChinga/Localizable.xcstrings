@@ -1,6 +1,31 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "address_hint_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write you’re address"
+          }
+        }
+      }
+    },
+    "address_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address"
+          }
+        }
+      }
+    },
+    "already_have_account_text" : {
+      "extractionState" : "manual"
+    },
     "continue_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +33,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continue"
+          }
+        }
+      }
+    },
+    "Did you have an account?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Did you have an account?"
           }
         }
       }
@@ -23,6 +58,17 @@
         }
       }
     },
+    "email_hint_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write you’re email"
+          }
+        }
+      }
+    },
     "email_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -34,8 +80,84 @@
         }
       }
     },
+    "Forgot your password?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot your password?"
+          }
+        }
+      }
+    },
     "forgot_your_password_text" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot your password?"
+          }
+        }
+      }
+    },
+    "Have an account?" : {
+
+    },
+    "last_name_hint_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write you’re last name"
+          }
+        }
+      }
+    },
+    "last_name_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last name"
+          }
+        }
+      }
+    },
+    "name_hint_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write your’re name"
+          }
+        }
+      }
+    },
+    "name_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "password_hint_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write youre password"
+          }
+        }
+      }
     },
     "password_text" : {
       "extractionState" : "manual",
@@ -44,6 +166,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Password"
+          }
+        }
+      }
+    },
+    "phone_hint_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write you’re mobile phone number"
+          }
+        }
+      }
+    },
+    "phone_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mobile phone number"
+          }
+        }
+      }
+    },
+    "Sign up here." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up here."
           }
         }
       }
@@ -99,6 +253,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Welcome Back 👋🏽"
+          }
+        }
+      }
+    },
+    "sign_up_subtitle_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create your’re  account here"
           }
         }
       }

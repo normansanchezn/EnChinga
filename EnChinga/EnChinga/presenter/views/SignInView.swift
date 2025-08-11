@@ -16,7 +16,7 @@ struct SignInView: View {
         textFieldValue: "",
         textModel: TextModel(text: "email_text", color: .black, isBold: true),
         hint: "sign_in_email_text",
-        keyboardType: .default
+        keyboardType: .emailAddress
     )
     @State var passwordTextFieldModel = TextFieldModel(
         textFieldValue: "",
