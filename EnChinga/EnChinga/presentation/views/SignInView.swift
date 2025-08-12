@@ -38,14 +38,14 @@ struct SignInView: View {
         VStack {
             TitleHeader(titleText: $signTitle)
             SubtitleHeader(subtitle: $signSubtitle)
-            TextFieldCustom(textFieldModel: $emailTextFieldModel)
-            TextFieldCustom(textFieldModel: $passwordTextFieldModel).padding(.top, 16)
-            TextCustomView(textModel: $textModel)
+            EditText(textFieldModel: $emailTextFieldModel)
+            EditText(textFieldModel: $passwordTextFieldModel).padding(.top, 16)
+            SimpleText(textModel: $textModel)
             Spacer()
             PrimaryButton(buttonModel: $buttonModel)
             HStack {
-                TextCustomView(textModel: $didYouHaveAnAccountModel)
-                TextCustomView(textModel: $signUpHereModel)
+                SimpleText(textModel: $didYouHaveAnAccountModel)
+                SimpleText(textModel: $signUpHereModel)
                     .padding(.trailing, 12)
             }.padding([.leading, .bottom, .trailing], 20)
         }

@@ -49,8 +49,42 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Ya tienes una cuenta?"
+          }
+        }
+      }
+    },
+    "congrats_subtitle_text" : {
+      "comment" : "Tu cuenta esta completa, ahora, revisa nuestro menú.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You’re account is complete, please check our menus!"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu cuenta esta completa, revisa nuestro menú. Selecciona, ordena y disfruta 🌮🍕"
+          }
+        }
+      }
+    },
+    "congrats_text" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congrats"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felicidades!"
           }
         }
       }
@@ -189,6 +223,23 @@
         }
       }
     },
+    "get_started_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comenzar"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comenzar"
+          }
+        }
+      }
+    },
     "Have an account?" : {
       "localizations" : {
         "en" : {
@@ -199,11 +250,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Tienes una cuenta?"
           }
         }
       }
+    },
+    "Home!" : {
+
     },
     "if_you_dont_have_otp_text" : {
       "extractionState" : "manual",

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct TextFieldCustom: View {
+struct EditText: View {
     @Binding var textFieldModel: TextFieldModel
 
     var body: some View {
         VStack {
-            TextCustomView(textModel: $textFieldModel.textModel)
+            SimpleText(textModel: $textFieldModel.textModel)
             TextField(textFieldModel.hint, text: $textFieldModel.textFieldValue)
                 .keyboardType(textFieldModel.keyboardType)
                 .padding(.all, 16)
@@ -31,5 +31,5 @@ struct TextFieldCustom: View {
         hint: "dummy_text",
         keyboardType: .default
     )
-    TextFieldCustom(textFieldModel: $textFieldModel)
+    EditText(textFieldModel: $textFieldModel)
 }

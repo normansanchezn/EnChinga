@@ -24,4 +24,7 @@ class Router {
     func navigateToCongratsScreen() {
         path.append(Route.congratsView)
     }
+    func navigateToHome() {
+        path.append(Route.navigateToHomeView)
+    }
 }

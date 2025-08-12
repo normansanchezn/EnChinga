@@ -48,7 +48,7 @@ public struct SignUpView: View {
         hint: "password_hint_text",
         keyboardType: .namePhonePad
     )
-    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "sign_in_text")
+    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text")
     @State var textModel = TextModel(text: "Have an account?", color: .gray, isBold: false)
     
     public var body: some View {
@@ -58,16 +58,16 @@ public struct SignUpView: View {
                 SubtitleText(text: $signUpSubtitle)
                 Spacer()
             }.padding(.horizontal, 16).padding(.bottom, 16)
-            TextFieldCustom(textFieldModel: $textNameFieldModel)
-            TextFieldCustom(textFieldModel: $textLastNameFieldModel).padding(.top, 16)
-            TextFieldCustom(textFieldModel: $textEmailFieldModel).padding(.top, 16)
-            TextFieldCustom(textFieldModel: $textPhoneNumberFieldModel).padding(.top, 16)
-            TextFieldCustom(textFieldModel: $textAddressNumberFieldModel).padding(.top, 16)
-            TextFieldCustom(textFieldModel: $textPasswordNumberFieldModel).padding(.top, 16)
+            EditText(textFieldModel: $textNameFieldModel)
+            EditText(textFieldModel: $textLastNameFieldModel).padding(.top, 16)
+            EditText(textFieldModel: $textEmailFieldModel).padding(.top, 16)
+            EditText(textFieldModel: $textPhoneNumberFieldModel).padding(.top, 16)
+            EditText(textFieldModel: $textAddressNumberFieldModel).padding(.top, 16)
+            EditText(textFieldModel: $textPasswordNumberFieldModel).padding(.top, 16)
             PrimaryButton(buttonModel: $buttonModel).padding(.top, 32)
             HStack {
                 Spacer()
-                TextCustomView(
+                SimpleText(
                     textModel: $textModel
                 )
                 NavigationLink(destination: SignInView()) {

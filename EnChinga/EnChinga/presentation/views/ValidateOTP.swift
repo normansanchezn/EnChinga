@@ -23,7 +23,7 @@ public struct ValidateOTP: View {
             TitleText(text: $otpScreenTitle)
             SubtitleText(text: $otpScreenSubtitle)
             HStack {
-                TextCustomView(textModel: $emailTextModel)
+                SimpleText(textModel: $emailTextModel)
             }.padding()
             OTPView()
             SubtitleText(text: $otpNoHaveBeenRecived)
