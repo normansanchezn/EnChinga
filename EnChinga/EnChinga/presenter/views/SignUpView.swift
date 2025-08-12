@@ -8,6 +8,7 @@
 import SwiftUI
 
 public struct SignUpView: View {
+    @Environment(Router.self) var router
     
     @State var signUpTitle: LocalizedStringKey = "sign_up_text"
     @State var signUpSubtitle: LocalizedStringKey = "sign_up_subtitle_text"
@@ -47,9 +48,7 @@ public struct SignUpView: View {
         hint: "password_hint_text",
         keyboardType: .namePhonePad
     )
-    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "sign_in_text", onButtonClicked: {
-        print("I press sign_in")
-    })
+    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "sign_in_text")
     @State var textModel = TextModel(text: "Have an account?", color: .gray, isBold: false)
     
     public var body: some View {
@@ -76,8 +75,18 @@ public struct SignUpView: View {
                 }.padding(.trailing, 16)
                 Spacer()
 
-            }.padding(.bottom, 16)
+            }
+            .padding(.bottom, 16)
+            .onAppear() {
+                buttonModel?.onButtonClicked = {
+                    self.goToValidateOTP()
+                }
+            }
         }
+    }
+    
+    func goToValidateOTP() {
+        router.navigateToValidateOTPScreen()
     }
 }
 

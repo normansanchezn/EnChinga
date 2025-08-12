@@ -18,4 +18,10 @@ class Router {
     func navigateToSingUp() {
         path.append(Route.signUpView)
     }
+    func navigateToValidateOTPScreen() {
+        path.append(Route.validateOTPVIew)
+    }
+    func navigateToCongratsScreen() {
+        path.append(Route.congratsView)
+    }
 }

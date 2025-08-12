@@ -8,4 +8,6 @@
 enum Route: Hashable {
     case signUpView
     case signInView
+    case validateOTPVIew
+    case congratsView
 }

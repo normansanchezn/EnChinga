@@ -12,6 +12,7 @@ struct TextCustomView: View {
 
     var body: some View {
         HStack {
+            Spacer()
             Text(textModel.text)
                 .fixedSize()
                 .foregroundColor(textModel.color)

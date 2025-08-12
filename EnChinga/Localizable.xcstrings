@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "address_hint_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +11,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Write you’re address"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu dirección"
           }
         }
       }
@@ -20,11 +29,31 @@
             "state" : "translated",
             "value" : "Address"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dirección"
+          }
         }
       }
     },
     "already_have_account_text" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ya tienes una cuenta"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Ya tienes una cuenta?"
+          }
+        }
+      }
     },
     "continue_text" : {
       "extractionState" : "manual",
@@ -33,6 +62,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continue"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
           }
         }
       }
@@ -43,6 +78,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Did you have an account?"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tienes una cuenta?"
           }
         }
       }
@@ -55,6 +96,29 @@
             "state" : "translated",
             "value" : "lorem ipsum dolor sit amet"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lorem ipsum dolor sit amet"
+          }
+        }
+      }
+    },
+    "email_dummy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "email@example.com"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "email@example.com"
+          }
         }
       }
     },
@@ -66,6 +130,12 @@
             "state" : "translated",
             "value" : "Write you’re email"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu email"
+          }
         }
       }
     },
@@ -73,6 +143,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Email"
@@ -87,6 +163,12 @@
             "state" : "translated",
             "value" : "Forgot your password?"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olvidaste tu contraseña?"
+          }
         }
       }
     },
@@ -98,11 +180,47 @@
             "state" : "translated",
             "value" : "Forgot your password?"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olvidaste tu contraseña?"
+          }
         }
       }
     },
     "Have an account?" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Have an account?"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Tienes una cuenta?"
+          }
+        }
+      }
+    },
+    "if_you_dont_have_otp_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you don’t have OTP, resend."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si aún no recibes el código, reenvíalo aquí"
+          }
+        }
+      }
     },
     "last_name_hint_text" : {
       "extractionState" : "manual",
@@ -111,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Write you’re last name"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu primer apellido"
           }
         }
       }
@@ -123,6 +247,12 @@
             "state" : "translated",
             "value" : "Last name"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellido"
+          }
         }
       }
     },
@@ -133,6 +263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Write your’re name"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu nombre"
           }
         }
       }
@@ -145,6 +281,12 @@
             "state" : "translated",
             "value" : "Name"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre"
+          }
         }
       }
     },
@@ -155,6 +297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Write youre password"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu contraseña"
           }
         }
       }
@@ -167,6 +315,12 @@
             "state" : "translated",
             "value" : "Password"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
         }
       }
     },
@@ -177,6 +331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Write you’re mobile phone number"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu número de teléfono"
           }
         }
       }
@@ -189,6 +349,12 @@
             "state" : "translated",
             "value" : "Mobile phone number"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número de teléfono"
+          }
         }
       }
     },
@@ -198,6 +364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sign up here."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrate aquí"
           }
         }
       }
@@ -210,6 +382,12 @@
             "state" : "translated",
             "value" : "Your email"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu correo electrónico"
+          }
         }
       }
     },
@@ -220,6 +398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your password"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu contraseña"
           }
         }
       }
@@ -232,6 +416,12 @@
             "state" : "translated",
             "value" : "Sign in your account"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicia sesión con tu cuenta"
+          }
         }
       }
     },
@@ -242,6 +432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sign in"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iniciar sesión"
           }
         }
       }
@@ -254,6 +450,12 @@
             "state" : "translated",
             "value" : "Welcome Back 👋🏽"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido de nuevo 👋🏽"
+          }
         }
       }
     },
@@ -264,6 +466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Create your’re  account here"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea tu cuenta aquí"
           }
         }
       }
@@ -276,6 +484,63 @@
             "state" : "translated",
             "value" : "Sign up"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crear cuenta"
+          }
+        }
+      }
+    },
+    "validate_otp_button_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Validate your OTP"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Validar"
+          }
+        }
+      }
+    },
+    "validate_otp_screen_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We will send you to confirm to this email:"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te hemos enviado un correo a:"
+          }
+        }
+      }
+    },
+    "validate_otp_title_screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Validate Email"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valida tu correo electrónico"
+          }
         }
       }
     },
@@ -286,6 +551,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Order now! We have everything that you need!"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordena ahora! Tenemos todo lo que necesitas!"
           }
         }
       }
@@ -298,6 +569,12 @@
             "state" : "translated",
             "value" : "Our delivery driver are ready!"
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuestros repartidores están listos!"
+          }
         }
       }
     },
@@ -307,7 +584,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "All your favorite foods"
+            "value" : "All your favorite foods 🌮"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu comida favorita 🌮"
           }
         }
       }
@@ -318,7 +601,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Get delivery at your doorstep!"
+            "value" : "Get delivery at your doorstep! 🏠"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En la puerta de tu casa! 🏠"
           }
         }
       }

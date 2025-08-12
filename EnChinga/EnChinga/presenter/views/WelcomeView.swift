@@ -38,6 +38,10 @@ struct WelcomeView: View {
         
     }
     
+    func navigateToCongratsScreen() {
+        router.navigateToCongratsScreen()
+    }
+    
     func signIn() {
         router.navigateToSignIn()
     }

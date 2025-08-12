@@ -19,6 +19,10 @@ struct RouterViewModifier: ViewModifier {
                 SignUpView()
             case .signInView:
                 SignInView()
+            case .validateOTPVIew:
+                ValidateOTP()
+            case .congratsView:
+                SignInView()
             }
         }
         .environment(router)
