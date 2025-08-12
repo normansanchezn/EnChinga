@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignInView: View {
+    
+    var signInValue = 1
     @State var signTitle: LocalizedStringKey = "sign_in_title_text"
     @State var signSubtitle: LocalizedStringKey = "sign_in_subtitle_text"
     @State var forgotPasswordText: LocalizedStringKey = "forgot_your_password_text"

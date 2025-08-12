@@ -8,32 +8,43 @@
 import SwiftUI
 
 struct WelcomeView: View {
-
-    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "continue_text", onButtonClicked: {})
-    @State var secondaryButtonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text", onButtonClicked: {
-        print("I press sign up")
-    })
+    
+    @Environment(Router.self) var router
+    
+    @State var buttonModel: ButtonModel? = ButtonModel(textButton: "continue_text")
+    @State var secondaryButtonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text")
     @State var pages: [PageModel] = [
         PageModel(image: "welcome_image", title: "welcome_title_step_one", subtitle: "welcome_subtitle_step_one"),
         PageModel(image: "welcome_image", title: "welcome_title_step_two", subtitle: "welcome_subtitle_step_two")
     ]
-
-        
+    
     var body: some View {
-        VStack{
-            Spacer()
-            ViewPager(pageModel: $pages)
-            Spacer()
-            PrimaryButton(buttonModel: $buttonModel)
-            SecondaryButton(buttonModel: $secondaryButtonModel)
+        NavigationStack {
+            VStack{
+                Spacer()
+                ViewPager(pageModel: $pages)
+                Spacer()
                 
-        }.padding()
+                PrimaryButton(buttonModel: $buttonModel)
+                SecondaryButton(buttonModel: $secondaryButtonModel)
+                
+            }
+            .padding()
+            .onAppear {
+                buttonModel?.onButtonClicked = { self.signIn() }
+                secondaryButtonModel?.onButtonClicked = { self.signUp() }
+            }
+        }
+        
+    }
+    
+    func signIn() {
+        router.navigateToSignIn()
+    }
+    
+    func signUp() {
+        router.navigateToSingUp()
     }
 }
-
-func signIn() {
-    
-}
-
 
 #Preview { WelcomeView() }

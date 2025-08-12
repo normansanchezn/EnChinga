@@ -9,5 +9,5 @@ import SwiftUI
 
 struct ButtonModel {
     var textButton: LocalizedStringKey
-    var onButtonClicked: () -> Void
+    var onButtonClicked: (() -> Void)?
 }

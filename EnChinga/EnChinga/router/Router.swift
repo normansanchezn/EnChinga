@@ -1,0 +1,21 @@
+//
+//  Router.swift
+//  EnChinga
+//
+//  Created by Norman Sanchez on 12/08/25.
+//
+import Foundation
+import SwiftUI
+import Observation
+
+@Observable
+class Router {
+    var path = NavigationPath()
+    
+    func navigateToSignIn() {
+        path.append(Route.signInView)
+    }
+    func navigateToSingUp() {
+        path.append(Route.signUpView)
+    }
+}

@@ -12,7 +12,7 @@ struct SecondaryButton: View {
     
     var body: some View {
         Button {
-            buttonModel?.onButtonClicked()
+            buttonModel?.onButtonClicked?()
         } label: {
             Text(buttonModel?.textButton ?? "dummy_text")
                 .frame(maxWidth: .infinity)

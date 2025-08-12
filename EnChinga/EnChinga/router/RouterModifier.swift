@@ -5,20 +5,20 @@
 //  Created by Norman Sanchez on 12/08/25.
 //
 
-// View+Extension.swift
 import Foundation
 import SwiftUI
+
+/// This apps manage routes in the app
 struct RouterViewModifier: ViewModifier {
     @State private var router = Router()
+    
     private func routeView(for route: Route) -> some View {
         Group {
             switch route {
-            case .setup:
-                AccountSetupView()
-            case .verify:
-                VerificationCodeView()
-            case .questionnaire:
-                QuestionnaireView()
+            case .signUpView:
+                SignUpView()
+            case .signInView:
+                SignInView()
             }
         }
         .environment(router)

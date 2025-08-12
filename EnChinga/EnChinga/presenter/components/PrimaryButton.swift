@@ -11,8 +11,8 @@ struct PrimaryButton: View {
     @Binding var buttonModel: ButtonModel?
     
     var body: some View {
-        Button {
-            buttonModel?.onButtonClicked()
+        Button() {
+            buttonModel?.onButtonClicked?()
         } label: {
             Text(buttonModel?.textButton ?? "dummy_text")
                 .frame(maxWidth: .infinity)
