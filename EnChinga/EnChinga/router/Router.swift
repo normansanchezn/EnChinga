@@ -25,6 +25,9 @@ class Router {
         path.append(Route.congratsView)
     }
     func navigateToHome() {
-        path.append(Route.navigateToHomeView)
+        path.append(Route.homeView)
+    }
+    func navigateToForgotPassword() {
+        path.append(Route.forgotPasswordView)
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SignInView: View {
     
+    @Environment(Router.self) var router
+    
     var signInValue = 1
     @State var signTitle: LocalizedStringKey = "sign_in_title_text"
     @State var signSubtitle: LocalizedStringKey = "sign_in_subtitle_text"
@@ -34,13 +36,17 @@ struct SignInView: View {
         print("I press sign_in")
     })
     
+    @State var forgotPasswordTextButton: LocalizedStringKey = "forgot_your_password_text"
+    @State var linkButtonModel : ButtonModel? = ButtonModel(textButton: "forgot_your_password_text")
+    
     var body: some View {
         VStack {
             TitleHeader(titleText: $signTitle)
             SubtitleHeader(subtitle: $signSubtitle)
             EditText(textFieldModel: $emailTextFieldModel)
             EditText(textFieldModel: $passwordTextFieldModel).padding(.top, 16)
-            SimpleText(textModel: $textModel)
+            
+            LinkTextButton(linkButtonModel: $linkButtonModel)
             Spacer()
             PrimaryButton(buttonModel: $buttonModel)
             HStack {
@@ -48,6 +54,10 @@ struct SignInView: View {
                 SimpleText(textModel: $signUpHereModel)
                     .padding(.trailing, 12)
             }.padding([.leading, .bottom, .trailing], 20)
+        }.onAppear() {
+            linkButtonModel?.onButtonClicked = {
+                router.navigateToForgotPassword()
+            }
         }
     }
 }

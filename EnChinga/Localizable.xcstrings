@@ -139,6 +139,16 @@
         }
       }
     },
+    "Email" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email"
+          }
+        }
+      }
+    },
     "email_dummy" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -185,7 +195,24 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Correo electrónico"
+          }
+        }
+      }
+    },
+    "emaill_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "Email"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Correo electrónico"
           }
         }
       }
@@ -202,6 +229,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Olvidaste tu contraseña?"
+          }
+        }
+      }
+    },
+    "forgot_password_subtitle_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select witch contact details should we reset you password"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Selecciona cuales de los detalles de contacto usaremos para recuperar tu contraseña."
           }
         }
       }
@@ -275,6 +319,15 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Key 1" : {
+      "extractionState" : "manual"
+    },
+    "Key 2" : {
+      "extractionState" : "manual"
     },
     "last_name_hint_text" : {
       "extractionState" : "manual",
@@ -378,6 +431,26 @@
         }
       }
     },
+    "phone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número de teléfono"
+          }
+        }
+      }
+    },
+    "Phone Number" : {
+
+    },
     "phone_hint_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -411,6 +484,12 @@
           }
         }
       }
+    },
+    "Send to your email" : {
+
+    },
+    "Send to your phone number" : {
+
     },
     "Sign up here." : {
       "localizations" : {
@@ -543,6 +622,47 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crear cuenta"
+          }
+        }
+      }
+    },
+    "subtitle_option_email_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send to your email"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Enviar por correo electrónico"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviarlo a través de correo electrónico"
+          }
+        }
+      }
+    },
+    "subtitle_title_option_phone" : {
+      "comment" : "Send to you’re email",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send to you’re email"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviarlo a través de SMS"
           }
         }
       }

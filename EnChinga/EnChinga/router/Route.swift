@@ -10,5 +10,6 @@ enum Route: Hashable {
     case signInView
     case validateOTPVIew
     case congratsView
-    case navigateToHomeView
+    case homeView
+    case forgotPasswordView
 }

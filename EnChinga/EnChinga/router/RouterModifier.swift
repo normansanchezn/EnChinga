@@ -23,8 +23,10 @@ struct RouterViewModifier: ViewModifier {
                 ValidateOTP()
             case .congratsView:
                 CongratsView()
-            case .navigateToHomeView:
+            case .homeView:
                 HomeView()
+            case .forgotPasswordView:
+                ForgotPasswordView()
             }
         }
         .environment(router)
