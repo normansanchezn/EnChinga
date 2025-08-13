@@ -50,6 +50,7 @@ public struct SignUpView: View {
     )
     @State var buttonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text")
     @State var textModel = TextModel(text: "Have an account?", color: .gray, isBold: false)
+    @State var linkButtonModelView: ButtonModel? = ButtonModel(textButton: "sign_in_text")
     
     public var body: some View {
         ScrollView {
@@ -59,34 +60,31 @@ public struct SignUpView: View {
                 Spacer()
             }.padding(.horizontal, 16).padding(.bottom, 16)
             EditText(textFieldModel: $textNameFieldModel)
-            EditText(textFieldModel: $textLastNameFieldModel).padding(.top, 16)
-            EditText(textFieldModel: $textEmailFieldModel).padding(.top, 16)
-            EditText(textFieldModel: $textPhoneNumberFieldModel).padding(.top, 16)
-            EditText(textFieldModel: $textAddressNumberFieldModel).padding(.top, 16)
-            EditText(textFieldModel: $textPasswordNumberFieldModel).padding(.top, 16)
+            EditText(textFieldModel: $textLastNameFieldModel).padding(.top, 8)
+            EditText(textFieldModel: $textEmailFieldModel).padding(.top, 8)
+            EditText(textFieldModel: $textPhoneNumberFieldModel).padding(.top, 8)
+            EditText(textFieldModel: $textAddressNumberFieldModel).padding(.top, 8)
+            EditText(textFieldModel: $textPasswordNumberFieldModel).padding(.top, 8)
             PrimaryButton(buttonModel: $buttonModel).padding(.top, 32)
             HStack {
                 Spacer()
                 SimpleText(
                     textModel: $textModel
                 )
-                NavigationLink(destination: SignInView()) {
-                    Text("sign_in_text").foregroundColor(.blue)
-                }.padding(.trailing, 16)
+                LinkTextButton(linkButtonModel: $linkButtonModelView)
                 Spacer()
 
             }
             .padding(.bottom, 16)
             .onAppear() {
                 buttonModel?.onButtonClicked = {
-                    self.goToValidateOTP()
+                    router.navigateToValidateOTPScreen()
+                }
+                linkButtonModelView?.onButtonClicked = {
+                    router.navigateToSignIn()
                 }
             }
         }
-    }
-    
-    func goToValidateOTP() {
-        router.navigateToValidateOTPScreen()
     }
 }
 

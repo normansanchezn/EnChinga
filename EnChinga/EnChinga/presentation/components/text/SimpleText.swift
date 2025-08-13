@@ -16,7 +16,9 @@ struct SimpleText: View {
                 .fixedSize()
                 .foregroundColor(textModel.color)
                 .fontWeight(textModel.isBold ? .bold : .regular)
-        }.padding(.leading, 20)
+                .padding(.horizontal, 16)
+            Spacer()
+        }
     }
 }
 
