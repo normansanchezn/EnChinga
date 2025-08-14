@@ -55,6 +55,42 @@
         }
       }
     },
+    "canceled_status_extra_info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "canceled_status_subtitle" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lamentamos que hayas cancelado tu deliciosa comida"
+          }
+        }
+      }
+    },
+    "canceled_status_title" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "😭 Pedido cancelado"
+          }
+        }
+      }
+    },
     "congrats_subtitle_text" : {
       "comment" : "Tu cuenta esta completa, ahora, revisa nuestro menú.",
       "extractionState" : "manual",
@@ -106,6 +142,36 @@
         }
       }
     },
+    "delivered_status_extra_info" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Califica a tu repartidor "
+          }
+        }
+      }
+    },
+    "delivered_status_subtitle" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esperamos que lo disfrutes."
+          }
+        }
+      }
+    },
+    "delivered_status_title" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎉 Pedido entregado"
+          }
+        }
+      }
+    },
     "Did you have an account?" : {
       "localizations" : {
         "en" : {
@@ -139,12 +205,12 @@
         }
       }
     },
-    "Email" : {
+    "duummy_text" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Email"
+            "value" : "Dummy text"
           }
         }
       }
@@ -200,19 +266,62 @@
         }
       }
     },
-    "emaill_text" : {
-      "extractionState" : "manual",
+    "failled_status_extra_info" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Email"
-          }
-        },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Correo electrónico"
+            "state" : "translated",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "failled_status_subtitle" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pudimos realizar tu pedido, por favor inténtalo de nuevo"
+          }
+        }
+      }
+    },
+    "failled_status_title" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️ Tuvimos un problema"
+          }
+        }
+      }
+    },
+    "favorite_restaurant_button_text" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordena ahora"
+          }
+        }
+      }
+    },
+    "favorite_restaurant_discount" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descuento del 25%"
+          }
+        }
+      }
+    },
+    "favorite_restaurant_title" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamales “Don Pepe”"
           }
         }
       }
@@ -244,7 +353,7 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Selecciona cuales de los detalles de contacto usaremos para recuperar tu contraseña."
           }
         }
@@ -300,9 +409,6 @@
         }
       }
     },
-    "Home!" : {
-
-    },
     "if_you_dont_have_otp_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -319,15 +425,6 @@
           }
         }
       }
-    },
-    "Key" : {
-      "extractionState" : "manual"
-    },
-    "Key 1" : {
-      "extractionState" : "manual"
-    },
-    "Key 2" : {
-      "extractionState" : "manual"
     },
     "last_name_hint_text" : {
       "extractionState" : "manual",
@@ -431,6 +528,36 @@
         }
       }
     },
+    "pending_status_extra_info" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu pedido tarda entre 20-30 min."
+          }
+        }
+      }
+    },
+    "pending_status_subtitle" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repartidor: Alberto Bastida"
+          }
+        }
+      }
+    },
+    "pending_status_title" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🛵 Repartidor en camino…"
+          }
+        }
+      }
+    },
     "phone" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -447,9 +574,6 @@
           }
         }
       }
-    },
-    "Phone Number" : {
-
     },
     "phone_hint_text" : {
       "extractionState" : "manual",
@@ -484,12 +608,6 @@
           }
         }
       }
-    },
-    "Send to your email" : {
-
-    },
-    "Send to your phone number" : {
-
     },
     "Sign up here." : {
       "localizations" : {
@@ -678,8 +796,8 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Validar"
+            "state" : "translated",
+            "value" : "Valida tu OTP"
           }
         }
       }

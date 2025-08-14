@@ -43,31 +43,3 @@ struct OptionButton: View {
     }
 }
 
-struct ContentView: View {
-    @State private var selectedOption: String = "email"
-    
-    var body: some View {
-        VStack(spacing: 16) {
-            OptionButton(
-                iconName: "envelope.fill",
-                title: "Email",
-                subtitle: "Send to your email",
-                isSelected: selectedOption == "email"
-            ) {
-                selectedOption = "email"
-            }
-            
-            OptionButton(
-                iconName: "phone.fill",
-                title: "Phone Number",
-                subtitle: "Send to your phone number",
-                isSelected: selectedOption == "phone"
-            ) {
-                selectedOption = "phone"
-            }
-        }
-        .padding()
-        .background(Color(UIColor.systemGroupedBackground))
-    }
-}
-
