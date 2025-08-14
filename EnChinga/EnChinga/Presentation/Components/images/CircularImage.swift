@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct CircularImage: View {
-    @Binding var image: String
+    var image: String
     
     var body: some View {
         Image(image)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .scaledToFit()
             .clipShape(Circle())
             .padding()
     }

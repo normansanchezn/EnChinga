@@ -8,20 +8,13 @@
 import SwiftUI
 
 struct PageView: View {
-    @Binding var pageModel: PageModel
+    @Binding var pageModel: PageViewModel
     
     var body: some View {
         VStack {
-            CircularImage(image: $pageModel.image)
-            TitleText(text: $pageModel.title)
-            SubtitleText(text: $pageModel.subtitle)
+            CircularImage(image: pageModel.pageType.image)
+            TitleText(text: pageModel.pageType.title)
+            SubtitleText(text: pageModel.pageType.subtitle)
         }
     }
 }
-
-/*
- #Preview {
-     PageView(pageModel: PageModel(image: "image", title: "Title", subtitle: "Subtitle"))
- }
- 
-*/

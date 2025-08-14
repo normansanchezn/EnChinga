@@ -44,8 +44,7 @@ struct SignInView: View {
             TitleHeader(titleText: $signTitle)
             SubtitleHeader(subtitle: $signSubtitle)
             EditText(textFieldModel: $emailTextFieldModel)
-            EditText(textFieldModel: $passwordTextFieldModel).padding(.top, 16)
-            
+            EditText(textFieldModel: $passwordTextFieldModel)
             LinkTextButton(linkButtonModel: $linkButtonModel)
             PrimaryButton(buttonModel: $buttonModel)
             HStack {

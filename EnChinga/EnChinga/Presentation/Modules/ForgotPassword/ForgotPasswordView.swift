@@ -17,8 +17,9 @@ struct ForgotPasswordView: View {
     
     var body: some View {
         ScrollView {
-            TitleText(text: $emailTitleCard)
-            SubtitleText(text:  $phoneTitleCard)
+            TitleText(text: emailTitleCard)
+                .padding(.horizontal, 16)
+            SubtitleHeader(subtitle: $phoneTitleCard)
             OptionButton(
                 iconName: "envelope.fill",
                 title: "email_text",

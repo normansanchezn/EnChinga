@@ -848,7 +848,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ordena ahora! Tenemos todo lo que necesitas!"
+            "value" : "En la puerta de tu casa!"
           }
         }
       }
@@ -882,7 +882,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tu comida favorita 🌮"
+            "value" : "Pide tu comida favorita 🌮"
           }
         }
       }
@@ -899,7 +899,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En la puerta de tu casa! 🏠"
+            "value" : "Ordena ahora! 🚀"
           }
         }
       }

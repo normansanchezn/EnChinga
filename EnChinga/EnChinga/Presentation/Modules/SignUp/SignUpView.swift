@@ -56,15 +56,15 @@ public struct SignUpView: View {
         ScrollView {
             TitleHeader(titleText: $signUpTitle)
             HStack {
-                SubtitleText(text: $signUpSubtitle)
+                SubtitleText(text: signUpSubtitle)
                 Spacer()
             }.padding(.horizontal, 16).padding(.bottom, 16)
             EditText(textFieldModel: $textNameFieldModel)
-            EditText(textFieldModel: $textLastNameFieldModel).padding(.top, 8)
-            EditText(textFieldModel: $textEmailFieldModel).padding(.top, 8)
-            EditText(textFieldModel: $textPhoneNumberFieldModel).padding(.top, 8)
-            EditText(textFieldModel: $textAddressNumberFieldModel).padding(.top, 8)
-            EditText(textFieldModel: $textPasswordNumberFieldModel).padding(.top, 8)
+            EditText(textFieldModel: $textLastNameFieldModel)
+            EditText(textFieldModel: $textEmailFieldModel)
+            EditText(textFieldModel: $textPhoneNumberFieldModel)
+            EditText(textFieldModel: $textAddressNumberFieldModel)
+            EditText(textFieldModel: $textPasswordNumberFieldModel)
             PrimaryButton(buttonModel: $buttonModel).padding(.top, 32)
             HStack {
                 Spacer()
@@ -86,8 +86,4 @@ public struct SignUpView: View {
             }
         }
     }
-}
-
-#Preview {
-    SignUpView()
 }

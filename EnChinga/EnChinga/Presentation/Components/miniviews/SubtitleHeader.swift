@@ -12,7 +12,7 @@ struct SubtitleHeader: View {
     
     var body: some View {
         HStack {
-            SubtitleText(text: $subtitle)
+            SubtitleText(text: subtitle)
                 .padding(.horizontal, 16)
             Spacer()
         }.padding(.bottom, 16)

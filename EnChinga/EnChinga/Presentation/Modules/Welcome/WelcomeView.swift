@@ -13,18 +13,17 @@ struct WelcomeView: View {
     
     @State var buttonModel: ButtonModel? = ButtonModel(textButton: "continue_text")
     @State var secondaryButtonModel: ButtonModel? = ButtonModel(textButton: "sign_up_text")
-    @State var pages: [PageModel] = [
-        PageModel(image: "welcome_image", title: "welcome_title_step_one", subtitle: "welcome_subtitle_step_one"),
-        PageModel(image: "welcome_image", title: "welcome_title_step_two", subtitle: "welcome_subtitle_step_two")
+    @State var pages: [PageViewModel] = [
+        PageViewModel(pageType: PageType.fristPage),
+        PageViewModel(pageType: PageType.secondPage)
     ]
     
     var body: some View {
         NavigationStack {
             VStack{
                 Spacer()
-                ViewPager(pageModel: $pages)
+                ViewPager(pageViewModel: $pages)
                 Spacer()
-                
                 PrimaryButton(buttonModel: $buttonModel)
                 SecondaryButton(buttonModel: $secondaryButtonModel)
                 
@@ -50,5 +49,3 @@ struct WelcomeView: View {
         router.navigateToSingUp()
     }
 }
-
-#Preview { WelcomeView() }

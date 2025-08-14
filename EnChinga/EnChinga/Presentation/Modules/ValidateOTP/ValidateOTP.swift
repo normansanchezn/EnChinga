@@ -20,13 +20,13 @@ public struct ValidateOTP: View {
     
     public var body: some View {
         ScrollView {
-            TitleText(text: $otpScreenTitle)
-            SubtitleText(text: $otpScreenSubtitle)
+            TitleText(text: otpScreenTitle)
+            SubtitleHeader(subtitle: $otpScreenSubtitle)
             HStack {
                 SimpleText(textModel: $emailTextModel)
             }.padding()
             OTPView()
-            SubtitleText(text: $otpNoHaveBeenRecived)
+            SubtitleText(text: otpNoHaveBeenRecived)
                 .padding()
             PrimaryButton(buttonModel: $validateOTPButton)
         }.onAppear() {

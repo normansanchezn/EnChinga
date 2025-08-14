@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ViewPager: View {
     
-    @Binding var pageModel: [PageModel]
+    @Binding var pageViewModel: [PageViewModel]
 
     var body: some View {
         TabView {
-            ForEach($pageModel) { page in
+            ForEach($pageViewModel) { page in
                 PageView(pageModel: page)
             }
         }

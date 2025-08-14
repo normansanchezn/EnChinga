@@ -18,9 +18,11 @@ public struct CongratsView: View {
     public var body: some View {
         VStack {
             Spacer()
-            CircularImage(image: $congratsImage)
-            TitleText(text: $titleCongratsView)
-            SubtitleText(text: $subtitleCongratsView)
+            CircularImage(image: congratsImage)
+            TitleText(text: titleCongratsView)
+                .padding(.horizontal, 16)
+            SubtitleHeader(subtitle: $subtitleCongratsView)
+                .padding(.horizontal, 16)
             PrimaryButton(buttonModel: $buittonmModel)
             Spacer()
         }.onAppear() {

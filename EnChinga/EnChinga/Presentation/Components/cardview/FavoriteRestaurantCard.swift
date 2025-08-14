@@ -16,7 +16,7 @@ struct FavoriteRestaurantCard: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text(favoriteRestauranteCardModel?.title ?? "dummy_text")
                     .font(.headline)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("TitleCardColor"))
                     .padding(.leading, 16)
                 
                 Text(favoriteRestauranteCardModel?.discount ?? "dummy_text")

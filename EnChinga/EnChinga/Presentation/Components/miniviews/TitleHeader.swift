@@ -12,7 +12,7 @@ struct TitleHeader: View {
     
     var body: some View {
         HStack {
-            TitleText(text: $titleText)
+            TitleText(text: titleText)
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
             Spacer()
