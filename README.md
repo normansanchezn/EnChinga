@@ -1,81 +1,117 @@
 # EnChinga
 App for local deliveries.
 
-## File structure:
+## Clean Architecture + Repository Pattern
 
-YourApp/
-│
-├── App/                      # Entry point, configuración global
-│   ├── YourAppApp.swift
-│   ├── AppDelegate.swift
-│   └── SceneDelegate.swift (si aplica)
-│
-├── Core/                     # Utilidades y cosas transversales
-│   ├── Extensions/           # Extensiones de tipos nativos (String+, Color+, etc.)
-│   ├── Utilities/            # Helpers, formatters, loggers
-│   ├── Constants/            # Strings, colores, valores fijos
-│   └── Enums/                # Enums globales y reusables
-│
-├── Data/                     # Capa de datos (repositorios e implementación)
-│   ├── DTOs/                 # Data Transfer Objects
-│   ├── Repositories/         # Implementaciones concretas (ej: API, CoreData, etc.)
-│   ├── Mappers/               # Conversores DTO ↔ Domain Model
-│   └── API/                   # Servicios de red
-│
-├── Domain/                   # Lógica de negocio pura (sin dependencias de UI)
-│   ├── Entities/             # Modelos del dominio (Business Models)
-│   ├── Repositories/         # Protocolos de repositorios
-│   ├── UseCases/              # Casos de uso
-│
-├── Presentation/             # UI y capa de presentación
-│   ├── Modules/               # Cada pantalla o feature
-│   │   ├── FeatureName/
-│   │   │   ├── Views/         # SwiftUI Views
-│   │   │   ├── ViewModels/    # ViewModels con lógica de UI
-│   │   │   └── Models/        # Modelos específicos de UI (UI Models)
-│   ├── Components/            # Custom reusable views
-│
-└── Resources/                 # Assets, fuentes, JSONs locales, etc.
+```mermaid
+graph TD
+    A[View] -->|Actions| B[ViewModel]
+    B -->|Ejecuta| C[Use Case]
+    C -->|Usa| D[Repository Protocol]
+    D -->|Implementación| E[Repository Impl]
+    E -->|Convierte| F[Mapper]
+    F -->|Transforma| G[DTO]
+    E -->|Obtiene datos| H[API/Database]
 
-## Clean + Repository Pattern:
+    subgraph Presentation
+        A
+        B
+    end
+    
+    subgraph Domain
+        C
+        D
+    end
+    
+    subgraph Data
+        E
+        F
+        G
+        H
+    end
+```
 
-   ┌─────────────────────┐
-   │     Presentation     │
-   │  (Views & ViewModels)│
-   └──────────▲───────────┘
-              │
-              │
-   ┌──────────┴───────────┐
-   │       Domain          │
-   │ Entities / UseCases   │
-   │ Repositories Protocol │
-   └──────────▲───────────┘
-              │
-              │
-   ┌──────────┴───────────┐
-   │        Data           │
-   │ DTOs / API / Mappers  │
-   │ Repository Impl.      │
-   └───────────────────────┘
-## Work flow
+## Flujo MVVM + UDF
 
-User Action → Intent → ViewModel → Cambia State → View se actualiza
+```mermaid
+
+sequenceDiagram
+    participant U as Usuario
+    participant V as View
+    participant VM as ViewModel
+    participant S as State
+    
+    U->>V: Interacción (tap, escribir, etc.)
+    V->>VM: Envía Action/Intent
+    VM->>S: Actualiza estado
+    S-->>V: Nuevo estado renderizado
 
 
-## Presentation file structure
+```
 
-Presentation/
- └── Login/
-      ├── LoginView.swift         // View
-      ├── LoginViewModel.swift    // ViewModel
-      ├── LoginState.swift        // Model (estado de UI)
-      └── LoginAction.swift       // Intents o Actions
+## File Structure
 
-## Architecture
+```mermaid
+graph TD
+    App --> Core
+    App --> Presentation
+    App --> Domain
+    App --> Data
+    App --> Resources
 
-   ┌───────────┐       Intent / Action       ┌─────────────┐
-   │   View    │ ─────────────────────────► │  ViewModel  │
-   └────▲──────┘                              └──────▲──────┘
-        │   State Binding                        │  Actualiza State
-        └────────────────────────────────────────┘
+    Core --> Extensions
+    Core --> Utilities
+    Core --> Constants
+    Core --> Enums
 
+    Data --> DTOs
+    Data --> RepositoriesImpl
+    Data --> Mappers
+    Data --> API
+
+    Domain --> Entities
+    Domain --> RepositoriesProtocols
+    Domain --> UseCases
+
+    Presentation --> Modules
+    Presentation --> Components
+
+    Modules --> Views
+    Modules --> ViewModels
+    Modules --> UIModels
+
+```
+
+## Databinding
+
+```mermaid
+
+flowchart TD
+    A[¿El dato cambia?] -->|No| B[Usa let]
+    A -->|Sí| C[¿El estado es local al componente?]
+    C -->|Sí| D["Usa @State"]
+    C -->|No| E[¿El estado viene del padre?]
+    E -->|Sí| F["Usa @Binding"]
+    E -->|No| G[¿Hay lógica compleja o múltiples propiedades?]
+    G -->|Sí| H["ViewModel con @ObservedObject o @StateObject"]
+    G -->|No| I["Usa @Binding o let si solo lectura"]
+
+
+```
+
+## Lifecycle of viewModel
+
+```mermaid
+
+sequenceDiagram
+    participant Parent
+    participant Child
+    participant VM as ViewModel
+
+    Parent->>VM: Crea ViewModel (@StateObject)
+    Parent->>Child: Pasa ViewModel (@ObservedObject)
+    Child->>VM: Envía acciones
+    VM->>VM: Procesa lógica y actualiza @Published state
+    VM-->>Child: State nuevo
+    Child-->>Parent: Estado se refleja si es @Binding o compartido
+```
