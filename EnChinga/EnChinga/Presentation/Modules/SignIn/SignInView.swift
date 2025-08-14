@@ -40,14 +40,13 @@ struct SignInView: View {
     @State var linkButtonModel : ButtonModel? = ButtonModel(textButton: "forgot_your_password_text")
     
     var body: some View {
-        VStack {
+        ScrollView {
             TitleHeader(titleText: $signTitle)
             SubtitleHeader(subtitle: $signSubtitle)
             EditText(textFieldModel: $emailTextFieldModel)
             EditText(textFieldModel: $passwordTextFieldModel).padding(.top, 16)
             
             LinkTextButton(linkButtonModel: $linkButtonModel)
-            Spacer()
             PrimaryButton(buttonModel: $buttonModel)
             HStack {
                 SimpleText(textModel: $didYouHaveAnAccountModel)

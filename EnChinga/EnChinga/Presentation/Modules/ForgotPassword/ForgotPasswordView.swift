@@ -16,7 +16,7 @@ struct ForgotPasswordView: View {
     
     
     var body: some View {
-        VStack {
+        ScrollView {
             TitleText(text: $emailTitleCard)
             SubtitleText(text:  $phoneTitleCard)
             OptionButton(

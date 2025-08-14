@@ -17,11 +17,12 @@ public struct CongratsView: View {
     
     public var body: some View {
         VStack {
+            Spacer()
             CircularImage(image: $congratsImage)
             TitleText(text: $titleCongratsView)
             SubtitleText(text: $subtitleCongratsView)
-            Spacer()
             PrimaryButton(buttonModel: $buittonmModel)
+            Spacer()
         }.onAppear() {
             buittonmModel?.onButtonClicked = {
                 router.navigateToHome()

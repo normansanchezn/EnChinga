@@ -13,7 +13,7 @@ struct EnChingaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView().withRouter()
+            WelcomeView().withRouter()
         }
     }
 }

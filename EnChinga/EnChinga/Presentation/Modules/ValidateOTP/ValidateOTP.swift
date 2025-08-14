@@ -19,7 +19,7 @@ public struct ValidateOTP: View {
 
     
     public var body: some View {
-        VStack {
+        ScrollView {
             TitleText(text: $otpScreenTitle)
             SubtitleText(text: $otpScreenSubtitle)
             HStack {
@@ -39,8 +39,4 @@ public struct ValidateOTP: View {
     private func validateOTP() {
         router.navigateToCongratsScreen()
     }
-}
-
-#Preview {
-    ValidateOTP()
 }
