@@ -30,7 +30,7 @@ struct SignInView: View {
     )
     @State var textModel = TextModel(text: "Forgot your password?", color: .orange, isBold: true)
     @State var didYouHaveAnAccountModel = TextModel(text: "Did you have an account?", color: .black, isBold: false)
-    @State var signUpHereModel = TextModel(text: "Sign up here.", color: .orange, isBold: true)
+    @State var signUpHereModel: ButtonModel? = ButtonModel(textButton: "Sign up here.")
     
     @State var buttonModel: ButtonModel? = ButtonModel(textButton: "sign_in_text", onButtonClicked: {
         print("I press sign_in")
@@ -51,17 +51,15 @@ struct SignInView: View {
             PrimaryButton(buttonModel: $buttonModel)
             HStack {
                 SimpleText(textModel: $didYouHaveAnAccountModel)
-                SimpleText(textModel: $signUpHereModel)
-                    .padding(.trailing, 12)
-            }.padding([.leading, .bottom, .trailing], 20)
-        }.onAppear() {
-            linkButtonModel?.onButtonClicked = {
-                router.navigateToForgotPassword()
+                LinkTextButton(linkButtonModel: $signUpHereModel)
+            }.onAppear() {
+                linkButtonModel?.onButtonClicked = {
+                    router.navigateToForgotPassword()
+                }
+                signUpHereModel?.onButtonClicked = {
+                    router.navigateToSingUp()
+                }
             }
         }
     }
-}
-
-#Preview {
-    SignInView()
 }
