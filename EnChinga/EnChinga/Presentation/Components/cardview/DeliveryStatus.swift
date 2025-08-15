@@ -43,8 +43,8 @@ struct DeliveryStatusCard: View {
             }
             .frame(maxWidth: .infinity, minHeight: 100)
             .background(deliveryStatusModel?.deliveryStatusType.cardColor)
-            .cornerRadius(12)
-            .shadow(radius: 2)
+            .cornerRadius(10)
+            .shadow(radius: 1)
         }
         .buttonStyle(.plain)
     }

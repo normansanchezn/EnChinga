@@ -12,7 +12,8 @@ struct LabelText : View {
     
     var body: some View {
         Text("\(labelText)")
-            .padding(8)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
             .font(.system(size: 14))
             .background(Color.yellow)
             .clipShape(Capsule())

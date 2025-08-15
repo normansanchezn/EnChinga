@@ -29,14 +29,16 @@ struct HomeView: View {
             TitleText(text: "home_title")
             EditText(textFieldModel: $textNameFieldModel)
             DeliveryStatusCard(deliveryStatusModel: $deliveryStatusModel)
+                .padding(4)
             FavoriteRestaurantCard(favoriteRestauranteCardModel: $favoriteRestaurantModel)
+                .padding(4)
             HStack {
                 TitleText(text: "top_of_week_title").padding(.top, 8).font(.largeTitle)
                 Spacer()
             }.padding(.horizontal, 16)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(topOfWeekModelList, id = \.id) { topOfWeekModel in
+                    ForEach(topOfWeekModelList, id: \.id) { topOfWeekModel in
                         TopOfWeekCard(topOfWeekModel: topOfWeekModel)
                     }
                 }

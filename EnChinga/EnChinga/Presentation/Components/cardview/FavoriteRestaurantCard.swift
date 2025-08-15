@@ -42,9 +42,12 @@ struct FavoriteRestaurantCard: View {
                 .scaledToFill()
                 .frame(width: 130, height: 130)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                .padding(.vertical, 16)
+                .padding(.trailing, 8)
         }
-        .padding(.vertical, 16)
+        .frame(maxWidth: .infinity, maxHeight: 140)
         .background(.white)
-        .shadow(radius: 2)
+        .cornerRadius(10)
+        .shadow(radius: 0.5)
     }
 }
