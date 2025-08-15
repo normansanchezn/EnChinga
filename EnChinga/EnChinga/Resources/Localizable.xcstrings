@@ -4,6 +4,9 @@
     "" : {
 
     },
+    "%@" : {
+
+    },
     "address_hint_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -409,6 +412,22 @@
         }
       }
     },
+    "home_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido 🍽️"
+          }
+        }
+      }
+    },
     "if_you_dont_have_otp_text" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -609,6 +628,55 @@
         }
       }
     },
+    "pizza_text" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PIzza"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pizza en caja"
+          }
+        }
+      }
+    },
+    "search_bar_hint" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search food now!"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busca comida aquí…"
+          }
+        }
+      }
+    },
+    "shepherd_tacos_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shepherd tacos"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tacos al pastor"
+          }
+        }
+      }
+    },
     "Sign up here." : {
       "localizations" : {
         "en" : {
@@ -781,6 +849,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enviarlo a través de SMS"
+          }
+        }
+      }
+    },
+    "tamales_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamales"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamales"
+          }
+        }
+      }
+    },
+    "top_of_week_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top of week"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lo más ✨"
           }
         }
       }

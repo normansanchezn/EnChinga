@@ -23,13 +23,3 @@ struct EditText: View {
         }
     }
 }
-
-#Preview {
-    @State var textFieldModel = TextFieldModel(
-        textFieldValue: "",
-        textModel: TextModel(text: "dummy_text", color: .orange, isBold: true),
-        hint: "dummy_text",
-        keyboardType: .default
-    )
-    EditText(textFieldModel: $textFieldModel)
-}

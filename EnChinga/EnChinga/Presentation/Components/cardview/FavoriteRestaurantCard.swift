@@ -43,11 +43,8 @@ struct FavoriteRestaurantCard: View {
                 .frame(width: 130, height: 130)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color("SecondaryColor"))
-                .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 2)
-        )
+        .padding(.vertical, 16)
+        .background(.white)
+        .shadow(radius: 2)
     }
 }
