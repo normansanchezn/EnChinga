@@ -29,7 +29,7 @@ struct FavoriteRestaurantCard: View {
                 } label: {
                     Text(favoriteRestauranteCardModel?.buttonText ?? "dummy_text")
                         .font(.subheadline)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("CardFavoriteRestaurantColor"))
                         .padding(.vertical, 8)
                         .padding(.horizontal, 16)
                         .background(Color("PrimaryColor"))

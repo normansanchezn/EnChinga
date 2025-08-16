@@ -12,6 +12,7 @@ struct LabelText : View {
     
     var body: some View {
         Text("\(labelText)")
+            .foregroundColor(.black)
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
             .font(.system(size: 14))
