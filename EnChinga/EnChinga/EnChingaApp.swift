@@ -1,7 +1,7 @@
 //
 //  EnChingaApp.swift
 //  EnChinga
-//
+// 
 //  Created by Norman Sanchez on 06/08/25.
 //
 
@@ -13,7 +13,7 @@ struct EnChingaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView().withRouter()
+            WelcomeView().withRouter()
         }
     }
 }

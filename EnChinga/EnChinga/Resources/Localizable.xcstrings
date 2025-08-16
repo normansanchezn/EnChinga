@@ -94,6 +94,26 @@
         }
       }
     },
+    "cart_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cart"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carrito"
+          }
+        }
+      }
+    },
+    "CartView" : {
+
+    },
     "congrats_subtitle_text" : {
       "comment" : "Tu cuenta esta completa, ahora, revisa nuestro menú.",
       "extractionState" : "manual",
@@ -412,6 +432,23 @@
         }
       }
     },
+    "home_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        }
+      }
+    },
     "home_title" : {
       "localizations" : {
         "en" : {
@@ -444,6 +481,9 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
     },
     "last_name_hint_text" : {
       "extractionState" : "manual",
@@ -644,6 +684,26 @@
         }
       }
     },
+    "profile_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Perfil"
+          }
+        }
+      }
+    },
+    "ProfileView" : {
+
+    },
     "search_bar_hint" : {
       "localizations" : {
         "en" : {
@@ -659,6 +719,26 @@
           }
         }
       }
+    },
+    "search_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Buscar"
+          }
+        }
+      }
+    },
+    "SearchView" : {
+
     },
     "shepherd_tacos_text" : {
       "extractionState" : "manual",

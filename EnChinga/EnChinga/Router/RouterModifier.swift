@@ -24,7 +24,7 @@ struct RouterViewModifier: ViewModifier {
             case .congratsView:
                 CongratsView()
             case .homeView:
-                HomeView()
+                HomeContainer()
             case .forgotPasswordView:
                 ForgotPasswordView()
             }
